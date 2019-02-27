@@ -13,6 +13,7 @@ const variableType = props => {
             const wght = ((x * 800) / width) + 100;  
             const wdth = ((y * 200) / height);  
             title.style.fontVariationSettings = `'wght' ${wght}, 'wdth' ${wdth}`;
+            title.innerText = `${x} ${y}`;
         };
         
         document.addEventListener('mousemove', resize);
