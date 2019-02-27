@@ -6,18 +6,17 @@ const variableType = props => {
     useEffect(() => {
         const title = document.querySelector('#variable');
         const resize = event => {
-            const x = event.clientX;
-            const y = event.clientY;
+            const x = event.clientX || event.touches[0].clientX;
+            const y = event.clientY || event.touches[0].clientY;
             const height = window.innerHeight;
             const width = window.innerWidth;
             const wght = ((x * 800) / width) + 100;  
             const wdth = ((y * 200) / height);  
             title.style.fontVariationSettings = `'wght' ${wght}, 'wdth' ${wdth}`;
-            title.innerText = `${x} ${y}`;
         };
         
         document.addEventListener('mousemove', resize);
-        document.addEventListener('touchstart', resize);
+        document.addEventListener('touchmove', resize);
     });
 
     return <h1 id='variable'>{props.children}</h1>;
