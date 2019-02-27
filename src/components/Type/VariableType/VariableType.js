@@ -6,8 +6,8 @@ const variableType = props => {
     useEffect(() => {
         const title = document.querySelector('#variable');
         const resize = event => {
-            const x = event.clientX || event.touches[0].clientX;
-            const y = event.clientY || event.touches[0].clientY;
+            const x = event.clientX || event.touches[0].clientX || 100;
+            const y = event.clientY || event.touches[0].clientY || 100;
             const height = window.innerHeight;
             const width = window.innerWidth;
             const wght = ((x * 800) / width) + 100;  
