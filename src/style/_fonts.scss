@@ -1,0 +1,9 @@
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
+
+@font-face {
+    font-family: 'Agrandir';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    src: url('assets/fonts/Agrandir-Variable.ttf') format('truetype');
+}
