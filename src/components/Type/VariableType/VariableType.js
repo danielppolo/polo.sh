@@ -16,7 +16,7 @@ const variableType = props => {
         };
         
         document.addEventListener('mousemove', resize);
-        document.addEventListener('touchmove', resize);
+        document.addEventListener('touchstart', resize);
     });
 
     return <h1 id='variable'>{props.children}</h1>;
