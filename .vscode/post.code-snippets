@@ -1,0 +1,16 @@
+{
+	"POST Method": {
+		"scope": "javascript,typescript",
+		"prefix": "post",
+		"body": [
+			"highway.post('$1', {$2})",
+			".then( response => {",
+				"\tpush('success', '$3');",
+			"\n})",
+			".catch(err => {",
+				"\tpush('error', '$4');",
+			"\n});",
+		],
+		"description": "POST to Highway"
+	}
+}

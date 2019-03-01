@@ -1,0 +1,16 @@
+{
+	"DELETE Method": {
+		"scope": "javascript,typescript",
+		"prefix": "delete",
+		"body": [
+			"highway.delete('$1', {$2})",
+			".then( response => {",
+				"\tpush('success', '$3');",
+			"\n})",
+			".catch(err => {",
+				"\tpush('success', '$4');",
+			"\n});",
+		],
+		"description": "DELETE to Highway"
+	}
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
-
+// https://github.com/mattboldt/typed.js/
 
 const dynamicText = props => {
 

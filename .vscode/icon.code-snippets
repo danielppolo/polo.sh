@@ -1,0 +1,12 @@
+{
+	"Function to return icon": {
+		"scope": "javascript,typescript",
+		"prefix": "icon",
+		"body": [
+			"export const $1 = () => (",
+			"\t$2",
+			");"
+		],
+		"description": "Icon to js"
+	}
+}

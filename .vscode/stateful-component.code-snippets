@@ -1,0 +1,27 @@
+{
+	"React Stateful Component": {
+		"scope": "javascript,typescript",
+		"prefix": "stateful",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import style from './$TM_FILENAME_BASE.module.scss';",
+			"\nclass $TM_FILENAME_BASE extends Component {",
+			"\t// Component description",
+			"\n\tstate = {",
+			"\n\t}",
+			"\n\trender() {",
+			"\t\treturn (",
+			"\t\t<div className={style.$TM_FILENAME_BASE}>",
+			"\n\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"\n$TM_FILENAME_BASE.propTypes = {",
+			"\tprop: PropTypes.func",
+			"}",
+			"\nexport default $TM_FILENAME_BASE;"
+		],
+		"description": "Stateful component template"
+	}
+}

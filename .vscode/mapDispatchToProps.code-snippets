@@ -1,0 +1,14 @@
+{
+	"Map Dispatch to Props": {
+		"scope": "javascript,typescript",
+		"prefix": "mapDispatchToProps",
+		"body": [
+			"const mapDispatchToProps = dispatch => {",
+				"\treturn {",
+					"\t\t$1: () => dispatch( { type: $2 })",
+				"\t};",
+			"};"
+		],
+		"description": "Redux state attributes for components"
+	}
+}

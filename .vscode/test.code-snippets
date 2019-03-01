@@ -1,0 +1,28 @@
+{
+	"Testing components": {
+		"scope": "javascript,typescript",
+		"prefix": "test",
+		"body": [
+			"import React from 'react';",
+			"import { configure, shallow } from 'enzyme';",
+			"import Adapter from 'enzyme-adapter-react-16';",
+			"\n",
+			"import ${TM_FILENAME_BASE/.test//gi} from './${TM_FILENAME_BASE/.test//gi}';",
+			"\n",
+			"configure({ adapter: new Adapter()})",
+			"\n",
+			"describe('<${TM_FILENAME_BASE/.test//gi}/>', () => {",
+			"\tlet component;",
+			"\tbeforeEach( ()=> {",
+			"\t\tcomponent = shallow(<${TM_FILENAME_BASE/.test//gi} />);",
+			"\t});",
+			"\n",
+			"\tit('$1', () => {",
+			"\t\t$2;",
+			"\t\texpect();",
+			"\t});",
+			"});"
+		],
+		"description": "Test components"
+	}
+}

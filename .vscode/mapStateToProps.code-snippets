@@ -1,0 +1,14 @@
+{
+	"Map State to Props": {
+		"scope": "javascript,typescript",
+		"prefix": "mapStateToProps",
+		"body": [
+			"const mapStateToProps = state => {",
+				"\treturn {",
+					"\t\t$1: $2",
+				"\t};",
+			"};"
+		],
+		"description": "Redux state attributes for components"
+	}
+}

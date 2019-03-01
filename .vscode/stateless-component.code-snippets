@@ -1,0 +1,19 @@
+{
+	"React Stateless Component": {
+		"scope": "javascript,typescript",
+		"prefix": "stateless",
+		"body": [
+			"import React from 'react';",
+			"import style from './$TM_FILENAME_BASE.module.scss';",
+			"\nconst ${TM_FILENAME_BASE/(^.{1})/${1:/downcase}/} = props => {",
+			"\t// Component description",
+			"\treturn (",
+			"\t<div className={style.$TM_FILENAME_BASE}>",
+			"\n\t</div>",
+			"\t);",
+			"}",
+			"\nexport default ${TM_FILENAME_BASE/(^.{1})/${1:/downcase}/};"
+		],
+		"description": "Stateless component template"
+	}
+}

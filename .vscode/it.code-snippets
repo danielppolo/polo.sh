@@ -1,0 +1,13 @@
+{
+	"Unit test": {
+		"scope": "javascript,typescript",
+		"prefix": "it",
+		"body": [
+			"\tit('$1', () => {",
+			"\t\t$2;",
+			"\t\texpect();",
+			"\t});"
+		],
+		"description": "Unit test"
+	}
+}

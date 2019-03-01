@@ -1,0 +1,12 @@
+{
+	"Arrow function": {
+		"scope": "javascript,typescript",
+		"prefix": "arrow",
+		"body": [
+			"const $1 = ($2) => {",
+				"\t$3",
+			"}"
+		],
+		"description": "Arrow function"
+	}
+}

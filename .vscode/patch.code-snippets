@@ -1,0 +1,16 @@
+{
+	"PATCH Method": {
+		"scope": "javascript,typescript",
+		"prefix": "post",
+		"body": [
+			"highway.patch('$1', {$2})",
+			".then( response => {",
+				"\tpush('success', '$3');",
+			"\n})",
+			".catch(err => {",
+				"\tpush('error', '$3');",
+			"\n});",
+		],
+		"description": "PATCH to Highway"
+	}
+}

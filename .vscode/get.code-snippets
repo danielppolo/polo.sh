@@ -1,0 +1,14 @@
+{
+	"GET Method": {
+		"scope": "javascript,typescript",
+		"prefix": "get",
+		"body": [
+			"highway.get('$1')",
+			".then( response => {",
+			"\n})",
+			".catch(err => {",
+			"\n});",
+		],
+		"description": "Get Highway"
+	}
+}
