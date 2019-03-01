@@ -4,19 +4,28 @@ import { giphy } from '../../../config/axios';
 
 const gif = props => {
     // Component description
-    const [url, setUrl] = useState('');
+    const [gif, setGif] = useState('');
+    const [gifList, setGifList] = useState([]);
+
     useEffect(()=>{
-        if(!url){
-            console.log('GET GIF');
-            giphy.get(`${props.search}&api_key=HO6ODO8AX4emQJJKF6w4YfQHhBXQM8Xh&limit=1`)
+        if (!gif){
+            giphy.get(`${props.search.replace(/\s/, "+")}&api_key=HO6ODO8AX4emQJJKF6w4YfQHhBXQM8Xh`)
             .then(response => {
-                setUrl(response.data.data[0].images.fixed_height.url);
+                const index = Math.floor(Math.random() * 25);
+                setGif(response.data.data[index].images.fixed_height.url);
+                setGifList(response.data.data);
             })
         }
     });
+
+    const changeGif = () => {
+        const index = Math.floor(Math.random() * 25);
+        setGif(gifList[index].images.fixed_height.url);
+    };
+
     return (
     <div className={style.Gif}>
-        <img src={url} alt='GIF' width={props.width} height={props.height}/>
+        <img onClick={changeGif} src={gif} alt='GIF' width={props.width} height={props.height}/>
     </div>
     );
 }

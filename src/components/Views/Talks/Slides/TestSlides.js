@@ -9,7 +9,7 @@ const testSlides = props => {
     <Slides>
         <Slide>
             <h1>Test</h1>
-            <Gif search='doggo'/>
+            <Gif search='thanks'/>
         </Slide>
         <Slide>
             <h1>Hello world</h1>

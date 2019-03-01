@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Slides.scss';
+import style from './Slides.module.scss';
 import Reveal from 'reveal.js';
 
 class Slides extends Component {
@@ -10,7 +10,6 @@ class Slides extends Component {
             progress: true,
             history: true,
             center: true,
-    
             transition: 'convex', // none/fade/slides/convex/concave/zoom
     
             // More info https://github.com/hakimel/reveal.js#dependencies
@@ -29,7 +28,7 @@ class Slides extends Component {
     render(){
         return (
             <div className="reveal">
-                <div className="slides">
+                <div className={["slides", style.Slides].join(' ')}>
                     {this.props.children}
                 </div>
             </div>
