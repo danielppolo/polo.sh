@@ -8,6 +8,7 @@ class App extends Component {
 
   render() {
     return (
+      
       <div className={style.App}>
           <Switch>
             <Route path='/talks' exact component={}/>
