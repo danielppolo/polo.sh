@@ -1,0 +1,12 @@
+{
+	"New Slide": {
+		"scope": "javascript,typescript",
+		"prefix": "slide",
+		"body": [
+			"<Slide>",
+            	"\t$1",
+        	"</Slide>"
+		],
+		"description": "New slide"
+	}
+}

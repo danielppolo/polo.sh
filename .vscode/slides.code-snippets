@@ -1,0 +1,25 @@
+{
+	"Start slides": {
+		"scope": "javascript,typescript",
+		"prefix": "slides",
+		"body": [
+			"import React from 'react';",
+			"import Slides from '../../../UI/Slides/Slides';",
+			"import Slide from '../../../UI/Slides/Slide/Slide';",
+			"\n",
+			"const ${TM_FILENAME_BASE/(^.{1})/${1:/downcase}/} = props => {",
+				"\t// Component description",
+				"\treturn (",
+				"\t<Slides>",
+					"\t\t<Slide>",
+						"\t\t\t$1",
+					"\t\t</Slide>",
+				"\t</Slides>",
+				"\t);",
+			"}",
+			"\n",
+			"export default ${TM_FILENAME_BASE/(^.{1})/${1:/downcase}/};"
+		],
+		"description": "Create new slides template"
+	}
+}

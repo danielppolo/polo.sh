@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aframe": "^0.9.0",
+    "d3": "^5.9.1",
     "headjs": "^1.0.3",
     "node-sass": "^4.11.0",
+    "p5": "^0.7.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
+    "redux-thunk": "^2.3.0",
     "reveal.js": "^3.7.0",
+    "three": "^0.102.0",
     "typed.js": "^2.0.10"
   },
   "scripts": {

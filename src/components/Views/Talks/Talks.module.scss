@@ -1,0 +1,40 @@
+@import 'src/style/vars';
+@import 'src/style/mixins';
+@import 'src/style/placeholders';
+// The scope of the following classes cover only the Talks component.
+
+.Talks {
+
+}
+
+
+// Break points
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .Talks {
+
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .Talks {
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Talks {
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Talks {
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .Talks {
+
+    }
+}
