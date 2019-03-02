@@ -5,7 +5,7 @@ const historyIndex = props => {
     // Component description
     return (
     <div className={style.HistoryIndex}>
-
+        <h1>...grown from the shadows and darkness.</h1>
     </div>
     );
 }

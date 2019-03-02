@@ -18,10 +18,32 @@
         }
     }
 
+    h2{
+        font : {
+            size: 48px;
+        }
+    }
+
+    h3{
+        font : {
+            size: 48px;
+        }
+    }
+
+    h4, h5, h6{
+        font : {
+            size: 48px;
+        }
+    }
+
     p{
         font: {
             size: 24px;
         }
+    }
+
+    a{
+        text-decoration: none;
     }
 
     code{
@@ -51,6 +73,18 @@
 
     strong{
         font-weight: 600;
+    }
+
+    em{
+
+    }
+
+    ul, ol{
+        list-style: none;
+    }
+
+    li{
+
     }
 }
 
