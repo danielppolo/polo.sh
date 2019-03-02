@@ -4,7 +4,7 @@ import style from './App.module.scss';
 import Talks from './components/Views/Talks/Talks';
 import Playground from './components/Views/Playground/Playground';
 import History from './components/Views/History/History';
-import Ideas from './components/Views/Ideas/Ideas';
+import Thoughts from './components/Views/Thoughts/Thoughts';
 import Projects from './components/Views/Projects/Projects';
 import Space from './components/Views/Space/Space';
 import Archive from './components/Views/Archive/Archive';
@@ -32,7 +32,7 @@ class App extends Component {
             <Route path='/talks' component={Talks}/>
             <Route path='/playground' component={Playground}/>
             <Route path='/history' component={History}/>
-            <Route path='/ideas' component={Ideas}/>
+            <Route path='/thoughts' component={Thoughts}/>
             <Route path='/projects' component={Projects}/>
             <Route path='/space' component={Space}/>
             <Route path='/archive' component={Archive}/>
