@@ -2,9 +2,56 @@
 @import 'src/style/mixins';
 @import 'src/style/placeholders';
 // The scope of the following classes cover only the Slides component.
+// Style for all Slide components
 
 .Slides {
+    h1, h2, h3, h4, h5, h6{
+        font : {
+            family: $sans;
+            weight: 600;
+          }
+    }
 
+    h1{
+        font : {
+            size: 48px;
+        }
+    }
+
+    p{
+        font: {
+            size: 24px;
+        }
+    }
+
+    code{
+
+    }
+
+    img{
+
+    }
+
+    mark{
+
+    }
+
+    q{
+
+    }
+
+    blockquote{
+        &:after{
+            content: '"';
+        }
+        &:before{
+            content: '"';
+        }
+    }
+
+    strong{
+        font-weight: 600;
+    }
 }
 
 
