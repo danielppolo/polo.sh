@@ -1,6 +1,7 @@
 import React from 'react';
 import Slides from '../../../UI/Slides/Slides';
 import Slide from '../../../UI/Slides/Slide/Slide';
+import Gif from '../../../UI/Gif/Gif';
 
 const testSlides = props => {
     // Component description
@@ -8,6 +9,7 @@ const testSlides = props => {
     <Slides>
         <Slide>
             <h1>Test</h1>
+            <Gif search="doggo"/>
         </Slide>
         <Slide>
             <Slide>

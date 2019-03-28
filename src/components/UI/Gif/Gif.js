@@ -3,13 +3,14 @@ import style from './Gif.module.scss';
 import { giphy } from '../../../config/axios';
 
 const gif = props => {
-    // Component description
+    // Component to fetch GIFs from Giphy. Uses prop search (str) to make the request.
     const [gif, setGif] = useState('');
     const [gifList, setGifList] = useState([]);
 
     useEffect(()=>{
         if (!gif){
-            giphy.get(`${props.search.replace(/\s/, "+")}&api_key=HO6ODO8AX4emQJJKF6w4YfQHhBXQM8Xh`)
+            console.log(props.search);
+            giphy.get(`search?q=${props.search.replace(/\s/, "+")}&api_key=HO6ODO8AX4emQJJKF6w4YfQHhBXQM8Xh`)
             .then(response => {
                 const index = Math.floor(Math.random() * 25);
                 setGif(response.data.data[index].images.fixed_height.url);

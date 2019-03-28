@@ -6,13 +6,18 @@ const dynamicText = props => {
 
     useEffect(() => {
         new Typed('#typed', {
-            strings: props.strings,
+            stringsElement: '#typed-strings',
             smartBackspace: true,
             loop: true
           });
     });
 
-    return <span id="typed"></span>;
+    return <React.Fragment>
+        <div id="typed-strings">
+            {props.children}
+        </div>
+        <span id="typed"></span>
+    </React.Fragment>;
 };
 
 export default dynamicText;
